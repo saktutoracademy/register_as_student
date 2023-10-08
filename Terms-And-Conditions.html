@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms And Conditions</title>
+    <style>
+        * {
+            background-color: #1f242d;
+        }
+
+        :root {
+            --bg-color: #1f242d;
+            --second-bg-color: #323946;
+
+            --text-color: #fff;
+            --main-color: #0ef;
+
+        }
+
+        .paragraph p {
+            font-family: 'popins', sans-serif;
+            color: #fff;
+
+        }
+
+        .heading span {
+            color: #0ef;
+        }
+
+        .h2,
+        h2 {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            font-size: 35px;
+            font-family: 'popins', sans-serif;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            border-radius: 4rem;
+            box-shadow: 0 0 1rem var(--main-color);
+            font-size: 1.6rem;
+            color: var(--second-bg-color);
+            letter-spacing: .1rem;
+            font-weight: 600;
+
+            margin-top: 39px;
+            width: 109px;
+            font-size: 19px;
+            margin-left: 637px;
+            text-decoration: none;
+            font-family: 'popins', sans-serif;
+        }
+
+        .btn:hover {
+            box-shadow: none;
+            color: var(--bs-btn-hover-color);
+            /* background-color: var(--bs-btn-hover-bg);
+border-color: var(--bs-btn-hover-border-color); */
+        }
+
+        .form-group button {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            border-radius: 4rem;
+            box-shadow: 0 0 1rem var(--main-color);
+            font-size: 1.6rem;
+            color: var(--second-bg-color);
+            letter-spacing: .1rem;
+            font-weight: 600;
+
+            margin-top: 39px;
+            width: 155px;
+            font-size: 19px;
+            margin-left: 637px;
+            text-decoration: none;
+            font-family: 'popins', sans-serif;
+        }
+
+        form  {
+            max-width: 1300px;
+        }
+
+        .form-group button:hover {
+            box-shadow: none;
+            color: var(--bs-btn-hover-color);
+        }
+
+        @media (max-width:444px) {
+
+            .h2,
+            h2 {
+                font-size: 17px;
+            }
+            form{
+                max-width: 420px;
+            }
+        }
+
+        @media (max-width:1300px) {
+            .btn {
+                margin-left: 2px;
+            }
+        }
+        @media (max-width:824px){
+            .form-group button{
+                margin-left: 4px;
+            }}
+    </style>
+</head>
+
+<body>
+    <h2 class="heading"> FOR. <span> STUDENTS/PARENTS</span></h2>
+    <div class="paragraph">
+        <div class="container">
+            <form action="https://formsubmit.co/SAKtutoracademy@gmail.com" method="POST">
+                <p>Please read and accept the terms and conditions below:</p>
+                <div class="terms">
+                    <p>
+
+                        Welcome to SAK tutor academy, our home tutoring services,
+                        your parents/students agree to abide by the following terms
+                        and conditions outlined below. These terms govern the
+                        relationshipbetween the Academy and Parents using our
+                        tutoring
+                        <br>
+                        <br>
+                        1.The Academy will make reasonable efforts to ensure the
+                        qualifications and suitability of the tutors, but we do not
+                        guarantee the academic performance or results
+                        of the student.
+                        <br>
+                        <br>
+                        2.If a session needs to be rescheduled, the Parent should
+                        notify the Academy and the tutor within a reasonable time
+                        frame.
+                        <br>
+                        <br>
+                        3.Parents and students are expected to treat the tutor with
+                        respect and maintain a positive learning environment. <br>
+                        <br>
+                        4. Any inappropriate behavior, harassment, or
+                        disrespectful conduct
+                        towards the tutor will not be tolerated <br>
+                        <br>
+                        5.It is the Parent's responsibility to ensure the
+                        safety and well-being of the student during tutoring
+                        sessions held at home. <br>
+                        <br>
+                        6.Both the Academy and the tutor will respect the
+                        confidentiality of personal and academic information shared by
+                        the Parent and student <br>
+                        <br>
+                        7.The Academy will make reasonable efforts to ensure the
+                        qualifications and suitability of the tutors, but we do
+                        not guarantee the academic performance or results of
+                        the student.
+                        <br><br>
+                        8. academy is not responsible for any misbehavior of tutors
+                        on students or students on tutors. both students and tutors
+                        especially female students/female tutors are advised to ensure
+                        safety before entering the tutoring contract with the other
+                        party. tutor academy is not liable for loss of any kind whatsoever.
+                        <br><br>
+                        9.Students/parents or tutor acknowledge that it is his/her
+                        responsibility to verify the credential and qualification of
+                        any tutor while entering into tuition contract.
+                    </p>
+                    <!-- <a href="https://bashartc13.wixsite.com/study-circle
+        " class="btn">Click Here</a> -->
+                </div>
+                <label style=" color: aqua;
+font-size: 18px" ;>
+                    <input type="checkbox" name="agreementCheckbox" id="agreementCheckbox">
+                    I accept the terms and conditions.
+                </label>
+                <div class="form-group">
+                    <button id="submitButton" disabled>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const agreementCheckbox = document.getElementById('agreementCheckbox');
+        const submitButton = document.getElementById('submitButton');
+
+        agreementCheckbox.addEventListener('change', function () {
+            if (agreementCheckbox.checked) {
+                submitButton.removeAttribute('disabled');
+            } else {
+                submitButton.setAttribute('disabled', 'true');
+            }
+        });
+
+        
+    </script>
+    <script>
+        const typed = new Typed('.multiple-text',{
+    strings:['Students', 'Parents'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+ });
+    </script>
+</body>
+
+</html>
